@@ -1,0 +1,157 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6b53a8cf-f8fb-4322-996d-d67d3f33fabc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Aerolinea ISO931</ID>
+  <Name>Aerolinea ISO931</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Aerolinea ISO931</DataSourceID>
+  <Schema>
+    <xs:schema id="Aerolinea_x0020_ISO931" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Aerolinea_x0020_ISO931" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1ac05f52-f3c9-4232-86f8-0c71bfb64e0e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Aerolinea" msprop:design-time-name="504d1205-1039-40ac-a601-fd500b1a6597" msprop:DbTableName="Aerolinea" msprop:FriendlyName="Aerolinea" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_Aero" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="57283bf6-518a-4c39-bef6-8c55fbe5f724" msprop:DbColumnName="id_Aero" msprop:FriendlyName="id_Aero" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="7267c1b5-7dd6-4c4d-91c0-d831eb84d25b" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Apellido" msprop:design-time-name="f380eae9-896f-43a3-a602-b2ec207f4483" msprop:DbColumnName="Apellido" msprop:FriendlyName="Apellido" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sexo" msprop:design-time-name="efdb9069-472c-46b1-ac00-2a710242e366" msprop:DbColumnName="Sexo" msprop:FriendlyName="Sexo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Pasaporte" msprop:design-time-name="1e1ace62-45f8-48e3-89aa-f81301ff994d" msprop:DbColumnName="Pasaporte" msprop:FriendlyName="Pasaporte" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Pasaje" msprop:design-time-name="aee13550-1af2-4b07-90a3-8624725bba83" msprop:DbColumnName="Pasaje" msprop:FriendlyName="Pasaje" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Destino" msprop:design-time-name="f6f885bd-6479-4e4b-9925-233a5ace500b" msprop:DbColumnName="Destino" msprop:FriendlyName="Destino" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumAvion" msprop:design-time-name="87dc7ee8-e368-4bba-a0d4-b031c23b9a77" msprop:DbColumnName="NumAvion" msprop:FriendlyName="NumAvion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fecha-Vuelo" msprop:design-time-name="8cf50d1f-17e9-4607-a57d-bf5eb4418e6d" msprop:DbColumnName="Fecha-Vuelo" msprop:FriendlyName="Fecha-Vuelo" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_bitacora" msprop:design-time-name="a8d670c1-9921-46a8-b07c-a99752921e2d" msprop:DbTableName="bitacora" msprop:FriendlyName="bitacora" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_bita" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="63a4cad6-dacf-40c0-81d9-d63dcce52947" msprop:DbColumnName="id_bita" msprop:FriendlyName="id_bita" type="xs:int" />
+                  <xs:element name="FechaHora" msprop:design-time-name="a505787a-8506-4ff7-aaed-dba2474b94cd" msprop:DbColumnName="FechaHora" msprop:FriendlyName="FechaHora" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Origen" msprop:design-time-name="00b76fa4-6ae0-413f-bc86-75d4ca0476f8" msprop:DbColumnName="Origen" msprop:FriendlyName="Origen" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estatus" msprop:design-time-name="cf4bed66-ede2-47b0-958b-fdcdf2558c3f" msprop:DbColumnName="Estatus" msprop:FriendlyName="Estatus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Aerolinea" msprop:design-time-name="97b88a0f-4aa1-4d52-8393-ac773c1bd685" msprop:DbTableName="Fact_Aerolinea" msprop:FriendlyName="Fact_Aerolinea" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_Aero" msprop:design-time-name="ac6ce0c6-0f95-4da2-9ff2-4eee4b37e26b" msprop:DbColumnName="id_Aero" msprop:FriendlyName="id_Aero" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_bita" msprop:design-time-name="dfcfbbaa-f923-46a4-8267-b5031cc3ad51" msprop:DbColumnName="id_bita" msprop:FriendlyName="id_bita" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Aerolinea" />
+          <xs:field xpath="id_Aero" />
+        </xs:unique>
+        <xs:unique name="dbo_bitacora_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_bitacora" />
+          <xs:field xpath="id_bita" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Aerolinea_Aerolinea" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Aerolinea" />
+          <xs:field xpath="id_Aero" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Aerolinea_bitacora" refer="dbo_bitacora_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Aerolinea" />
+          <xs:field xpath="id_bita" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Aerolinea_x0020_ISO931 xmlns="" />
+  </Schema>
+</DataSourceView>
